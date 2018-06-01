@@ -1,0 +1,20 @@
+{
+    "name": "Minimal AngularJS app",
+
+    "author": {
+      "name": "Fabio Vilela",
+      "email": "fbvilela@gmail.com"
+    },
+
+    "defaultLocale": "en",
+    "private": false,
+    "singleInstall": false,
+    "frameworkVersion": "2.0",
+    "version": "1.0",
+
+    "location": {
+      "support": {
+        "ticket_sidebar": "assets/index.html"
+      }
+    }
+  }

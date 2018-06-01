@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-test": {
+    "angular-zendesk": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,14 +13,16 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-test",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/translations",
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.css"
@@ -50,18 +52,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-test:build"
+            "browserTarget": "angular-zendesk:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-test:build:production"
+              "browserTarget": "angular-zendesk:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-test:build"
+            "browserTarget": "angular-zendesk:build"
           }
         },
         "test": {
@@ -95,7 +97,7 @@
         }
       }
     },
-    "angular-test-e2e": {
+    "angular-zendesk-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,7 +105,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-test:serve"
+            "devServerTarget": "angular-zendesk:serve"
           }
         },
         "lint": {
@@ -118,5 +120,5 @@
       }
     }
   },
-  "defaultProject": "angular-test"
+  "defaultProject": "angular-zendesk"
 }

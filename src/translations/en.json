@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "Minimal AngularJS app",
+    "description": "Minimal Zendesk app with AngularJS to get you started.",
+    "long_description": "Minimal Zendesk app with AngularJS to get you started.",
+    "installation_instructions": " To be completed."
+  }
+}
