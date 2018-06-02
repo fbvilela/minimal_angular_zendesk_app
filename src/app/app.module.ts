@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ZendeskService } from './zendesk.service';
+import { SlaComponent } from './sla/sla.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SlaComponent
   ],
   imports: [
     BrowserModule

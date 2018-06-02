@@ -1,9 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   {{ app_name }}
-  <ul>
-    <li>User name: {{ currentUser?.name}}</li>
-    <li>User email: {{ currentUser?.email}}</li>
-    <li>Account: {{ context?.account.subdomain }}</li>
-  </ul>
+
+  <app-sla *ngFor="let policy of slaPolicies"
+    [policyId] = "policy.id"
+    [title] = "policy.title"
+    [state] = "getPolicyState(policy.title)"
+    [count] = "getBreachCount(policy.title)"
+  >
+  </app-sla>
 </div>
